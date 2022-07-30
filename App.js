@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {Home,Search,Sale,Cart} from './screens'
 import Ionicons from '@expo/vector-icons/Ionicons'
 import Header from './components/Header';
+import { NativeBaseProvider } from 'native-base';
 
 const Tab = createBottomTabNavigator();
 
@@ -17,6 +18,7 @@ export default function App() {
   }
 
   return (
+    <NativeBaseProvider>
   <NavigationContainer theme={theme}>
     <Tab.Navigator initialRouteName='Home'
      screenOptions={({route})=>({
@@ -44,8 +46,8 @@ export default function App() {
 
         return <Ionicons name={iconName} size={size} color={color} />;
       },
-      tabBarActiveTintColor: '#B2EE32',
-      tabBarInactiveTintColor: '#D2D2D3',
+      tabBarActiveTintColor: '#e63946',
+      tabBarInactiveTintColor: '#e5e5e5',
       tabBarShowLabel:false
     })}
 
@@ -87,6 +89,8 @@ export default function App() {
       />
      </Tab.Navigator>
     </NavigationContainer>
+</NativeBaseProvider>
+
   );
 }
 

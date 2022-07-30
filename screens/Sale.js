@@ -85,9 +85,9 @@ const filter=[
 
 ]
 
-const Sale = () => {
+const Sale = ({bg}) => {
   return (
-    <View style={{flex:1,paddingHorizontal:12,backgroundColor:'#0c0b0c',paddingBottom:20}}>
+    <View style={{flex:1,paddingHorizontal:12,backgroundColor:bg?bg:'#0c0b0c',paddingBottom:20}}>
         <FlatList data={filter}
         renderItem={({item})=><SaleFilter label={item.label} />}
         keyExtractor={(item)=>item.label}

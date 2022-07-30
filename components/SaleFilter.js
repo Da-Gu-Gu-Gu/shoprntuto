@@ -8,8 +8,8 @@ const SaleFilter = ({label}) => {
     margin:10,
     paddingHorizontal:10,
     borderRadius:20,
-    backgroundColor:'#e2e2e2',height:30,display:'flex',alignItems:'center',justifyContent:'center'}}>
-      <Text style={{color:'black'}}>{label}</Text>
+    backgroundColor:'#e33d2e',height:30,display:'flex',alignItems:'center',justifyContent:'center'}}>
+      <Text style={{color:'white'}}>{label}</Text>
     </View>
   )
 }

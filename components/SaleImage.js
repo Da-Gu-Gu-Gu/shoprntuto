@@ -22,7 +22,7 @@ const SaleImage = ({imgUrl,title,price}) => {
         right:10,
     }} size={30} color="white" />
     </View>
-          <Text style={{color:'#B2EE32',fontFamily:'bold',fontSize:18}}>{title}</Text>
+          <Text style={{color:'#e63946',fontFamily:'bold',fontSize:18}}>{title}</Text>
           <Text style={{color:'white'}}>$ {price}</Text>
           </View>
   )
